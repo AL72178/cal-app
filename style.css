@@ -32,6 +32,11 @@ iframe {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #fa4d1d;
+}
+
 /* Style for buttons */
 button {
   position: absolute;
