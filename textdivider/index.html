@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Moved</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .notification {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .notification h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #d9534f; /* Bootstrap Danger Color */
-        }
-        .notification p {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        .notification a {
-            color: #0275d8; /* Bootstrap Primary Color */
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .notification a:hover {
-            text-decoration: underline;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Text Divider</title>
+<link rel="icon" href="./logo.png" type="image/x-icon">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
 </head>
+
 <body>
-    <a href="./datediff/datediff.html"></a>
-    <div class="notification">
-        <h1>Site Moved</h1>
-        <p>The admin has taken down this webpage, and it has been moved to a new location.</p>
-        <p>To know more, please contact the admin</a></p>
+
+<div class="container">
+    <div class="heading" >
+        <h2>Text Divider</h2>
     </div>
+    
+    <div id="inputContainer">
+        <div class="incontainer">
+            <textarea id="inputText" placeholder="Please write your verbiage here...."></textarea>
+            <div class="btncounter">
+                <span class="textCounter" id="charCount">Characters: 0</span> 
+                <button id="divideButton" class="button primaryButton">Divide Text</button>
+                <button id="resetButton" class="button secondaryButton">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="outputBoxes" class="textBoxContainer"></div>
+</div>
+
+<footer class="footer">
+    <div class="row">
+        <div class="col">
+                <h3>
+                    About
+                    <div class="underline"><span></span></div>
+                </h3>
+                <p>
+                    Welcome to Quick Assist, a web application designed to streamline various tasks with specialized tools.
+                </p>
+        </div>
+
+        <div class="col">
+            <h3>
+                Behind the Code
+                <div class="underline"><span></span></div>
+            </h3>
+            <h4>Nishant Singh</h4>
+            <p>Associate Claim - PDR</p>
+            <p>Gurgaon - IND</p>
+            <p class="email-id">nishant.singh@elevancehealth.com</p>
+        </div>
+        
+        <div class="col know-more">
+            <h3>
+                Know More
+                <div class="underline"><span></span></div>
+            </h3>
+            <div class="suggestion">
+                <a
+                    href="mailto:nishant.singh@elevancehealth.com?subject=Suggestion/Modification%20-%20Quick%20Assist&body=Purpose:%20Suggestion/Modification%0D%0A%0D%0AExplain:%0D%0A%0D%0A%0D%0A"
+                    class="contact-button"
+                >Send Suggestion or Feedback <i class="bx bx-right-arrow"></i></a>
+            </div>
+        </div>
+        <hr />
+</footer>
+
+<script src="./main.js"></script>
 </body>
 </html>
